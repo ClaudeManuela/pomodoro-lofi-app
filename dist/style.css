@@ -95,7 +95,7 @@ body {
 #pomodoro #clock #timer #controls {
   align-items: center;
   display: flex;
-  color: #a348a6;
+  color: #fff0f0;
   flex-direction: column;
   font-size: 15px;
   font-weight: 700;
