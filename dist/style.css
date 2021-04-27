@@ -6,7 +6,7 @@
 
 body {
   align-items: center;
-  background-image:url(https://media.giphy.com/media/AEUsXjmzb3cZl6wucd/giphy.gif);
+  background-image:url(https://lofi.cafe/static/media/gif8.ad7d623a.gif);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat; 
@@ -53,7 +53,7 @@ body {
   flex-direction: column;
 }
 #pomodoro #clock #timer #title {
-  color: #461e52;
+  color: #fff0f0;
   font-size: 28px;
   line-height: 28px;
   margin: 3px 0 1px;
@@ -71,7 +71,7 @@ body {
   }
 }
 #pomodoro #clock #timer #countdown {
-  color: #674ab3;
+  color: #fff;
   display: flex;
   font-size: 43px;
   font-weight: 600;
@@ -255,7 +255,7 @@ audio {
 }
 #audio-selector .theme {
   background: linear-gradient(to bottom, rgba(255, 99, 127, 0.28) 0%, rgba(255, 99, 127, 0.28) 1%, rgba(255, 98, 143, 0) 84%, rgba(255, 98, 146, 0) 100%);
-  color: #e46372;
+  color: #fff;
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#47ff637f", endColorstr="#00ff6292", GradientType=0);
   flex: 1 1 25%;
@@ -303,7 +303,7 @@ body.water{
 }
 
 body.rain{
-  background-image: url(https://media.giphy.com/media/H62NM1ab7wzMXURdoi/giphy.gif);
+  background-image: url(https://media.giphy.com/media/orQ7YGNizjTzi/giphy.gif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -314,7 +314,7 @@ body.peace{
 }
 
 body.cafe{
-  background-image: url(https://media.giphy.com/media/SN9veMjGwQqE8/giphy.gif);
+  background-image: url(https://media.giphy.com/media/vadyPNn86EcuahO053/giphy.gif);
   background-size: cover;
   background-repeat: no-repeat;
 }
