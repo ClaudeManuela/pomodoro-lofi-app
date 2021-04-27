@@ -196,7 +196,7 @@ body {
   font-weight: bold;
   margin-top: 8px;
   margin-bottom: -6px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 #pomodoro #options .fa-angle-double-up {
   color: #674ab3;
@@ -288,6 +288,10 @@ audio {
     font-size: 14px;
     padding: 7px;
   }
+}
+
+svg{
+  color: #fff;
 }
 
 body.veggie {
