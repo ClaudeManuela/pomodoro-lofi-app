@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - freeCodeCamp: Pomodoro Clock</title>
+  <title>pomodoro clock and ambience</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
@@ -16,7 +16,7 @@
 <!-- Check it out at: https://tide.moreless.io/en/ -->
 <!-- --------------------------------------------- -->
 
-<div id="pomodoro">
+<div id="pomodoro" class="body">
   <div id="clock">
     <div id="timer">
       <div id="title">Ready?</div>
@@ -46,17 +46,81 @@
     </div>
   </div>
 </div>
-<div id="audio-selector">
-  <div id="forest" class="theme"><!--🌲 -->Forest</div>
-  <div id="ocean" class="theme"><!--🌊 -->Ocean</div>
-  <div id="rainy" class="selected theme"><!--🌧 -->Rainy</div>
-  <div id="peace" class="theme"><!--🧘 -->Peace</div>
-  <div id="cafe" class="theme"><!--☕ -->Caf&eacute;</div>
-</div>
+<div id="audio-selector" class="background-selector">
+  <button id="forest" class="theme toggle-forest"> Forest</button>
+  <button id="ocean" class="theme toggle-ocean">Ocean</button>
+  <button id="rainy" class="selected theme toggle-rainy">Rainy</button>
+  <button id="peace" class="theme toggle-peace">Peace</button>
+  <button id="cafe" class="theme toggle-cafe">Café</button>
+</div>    
+
 <audio loop autoplay="false" src="https://joeweaver.me/codepenassets/freecodecamp/challenges/build-a-pomodoro-clock/rain.mp3">
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://use.fontawesome.com/releases/v5.0.6/js/all.js'></script><script  src="./script.js"></script>
+
+<script>
+  const toggleF= document.querySelector('.toggle-forest');
+  const toggleO=document.querySelector('.toggle-ocean');
+  const toggleR=document.querySelector('.toggle-rainy')
+  const toggleP=document.querySelector('.toggle-peace')
+  const toggleC=document.querySelector('.toggle-cafe')
+  const bodyBackground = document.querySelector('body');
+
+  toggleF.addEventListener('click', function () {
+    toggleforest();
+  }, false)
+
+  function toggleforest(){
+  bodyBackground.classList.add('veggie');
+  bodyBackground.classList.remove('water');
+  bodyBackground.classList.remove('rain');
+  bodyBackground.classList.remove('peace');
+  bodyBackground.classList.remove('cafe');
+  }
+
+toggleO.addEventListener('click', function () {
+    toggleOcean();
+  }, false)
+function toggleOcean(){
+  bodyBackground.classList.add('water');
+  bodyBackground.classList.remove('rain');
+  bodyBackground.classList.remove('peace');
+  bodyBackground.classList.remove('cafe');
+}
+toggleR.addEventListener('click', function () {
+    toggleRainy();
+  }, false)
+function toggleRainy(){
+  bodyBackground.classList.add('rain');
+  bodyBackground.classList.remove('veggie');
+  bodyBackground.classList.remove('water');
+  bodyBackground.classList.remove('peace');
+  bodyBackground.classList.remove('cafe');
+}
+toggleP.addEventListener('click', function () {
+    togglePeace();
+  }, false)
+function togglePeace(){
+  bodyBackground.classList.add('peace');
+  bodyBackground.classList.remove('veggie');
+  bodyBackground.classList.remove('water');
+  bodyBackground.classList.remove('rain');
+  bodyBackground.classList.remove('cafe');
+}
+toggleC.addEventListener('click', function () {
+    toggleCafe();
+  }, false)
+function toggleCafe(){
+  bodyBackground.classList.add('cafe');
+  bodyBackground.classList.remove('veggie');
+  bodyBackground.classList.remove('water');
+  bodyBackground.classList.remove('rain');
+  bodyBackground.classList.remove('peace');
+}
+  
+</script>
+
 
 </body>
 </html>

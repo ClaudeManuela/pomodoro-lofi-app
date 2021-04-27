@@ -160,5 +160,5 @@ $(() => {
       case "cafe": $audio.attr("src", "https://joeweaver.me/codepenassets/freecodecamp/challenges/build-a-pomodoro-clock/cafe.mp3"); break;
     }
   }
-
-});
+}
+);
